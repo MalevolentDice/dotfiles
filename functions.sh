@@ -17,7 +17,7 @@ function install {
   local program="${1}"
   if [ ! "$(which "${program}")" ]; then
     echo "Installing: ${program}..."
-    sudo apt-get install "${program}"
+    sudo apt-get -y install "${program}"
   else
     echo "Already installed: ${program}"
   fi
