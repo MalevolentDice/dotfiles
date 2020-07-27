@@ -10,7 +10,14 @@ fi
 alias sudo='sudo ' # make aliases available in sudo
 alias ..='cd .. && pwd && ls'
 alias pbcopy='xclip -selection clipboard'
+alias vi='vim'
+alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 export TERM=xterm-256color
 export EDITOR=/usr/bin/vim
