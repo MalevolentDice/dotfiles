@@ -1,8 +1,16 @@
 #!/bin/bash
-cat << EOT >> ../.bashrc
-if [ -f ~/.customrc/alias ]; then
-	. ~/.customrc/alias
-fi
-EOT
+dotfilesDir=$(pwd)
 
-cp alias ../.customrc/alias
+function linkDotfile {
+  dest="${HOME}/${1}"
+  dateStr=$(date +%Y-%m-%d-%H%M)
+
+  [ -h ~/${1} ] && rm ${dest}
+  [ -f "${dest}" ] && mv ${dest}{,.${dateStr}}
+  [ -d "${dest}" ] && mv ${dest}{,.${dateStr}}
+
+  echo "Creating symlink: ${dest}"
+  ln -s ${dotfilesDir}/${1} ${dest}
+}
+
+linkDotfile .bashrc

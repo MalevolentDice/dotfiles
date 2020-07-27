@@ -1,5 +1,0 @@
-alias sudo='sudo ' # make aliases available in sudo
-alias ..='cd .. && pwd && ls'
-alias ...='cd ../.. && pwd && ls'
-alias ....='cd ../../.. && pwd && ls'
-alias pbcopy='xclip -selection clipboard'
