@@ -8,4 +8,6 @@ install firefox
 install maven
 install snapd
 install default-jdk
+install gdebi
+installDiscord
 

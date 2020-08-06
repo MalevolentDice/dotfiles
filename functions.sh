@@ -22,3 +22,8 @@ function install {
     echo "Already installed: ${program}"
   fi
 }
+
+function installDiscord {
+  wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+  sudo gdebi ~/discord.deb
+}
