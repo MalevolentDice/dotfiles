@@ -25,5 +25,5 @@ function install {
 
 function installDiscord {
   wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-  sudo gdebi ~/discord.deb
+  sudo gdebi ~/discord.deb && rm ~/discord.deb
 }
