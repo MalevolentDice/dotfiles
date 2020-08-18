@@ -2,6 +2,7 @@
 source ./functions.sh
 
 sudo apt update
+sudo apt-get install -y kubuntu-restricted-extras
 sudo apt-get install -y vim
 sudo apt-get install -y xclip
 sudo apt-get install -y firefox
