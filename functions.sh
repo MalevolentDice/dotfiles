@@ -13,16 +13,6 @@ function linkDotfile {
   ln -s "${dotfilesDir}/${1}" "${dotFile}"
 }
 
-function install {
-  local program="${1}"
-  if [ ! "$(which "${program}")" ]; then
-    echo "Installing: ${program}..."
-    sudo apt-get -y install "${program}"
-  else
-    echo "Already installed: ${program}"
-  fi
-}
-
 function installDiscord {
   wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
   sudo gdebi ~/discord.deb && rm ~/discord.deb
