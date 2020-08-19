@@ -10,5 +10,6 @@ sudo apt-get install -y maven
 sudo apt-get install -y snapd
 sudo apt-get install -y default-jdk
 sudo apt-get install -y gdebi
+sudo apt-get install -y steam
 installDiscord
 
