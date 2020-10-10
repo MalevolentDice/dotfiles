@@ -1,7 +1,7 @@
 #!/bin/bash
-dotfilesDir=$(pwd)
+dotFileDir=$(pwd)
 
-function linkDotfile {
+function linkDotFile {
   dotFile="${HOME}/${1}"
   dateString=$(date +%Y-%m-%d-%H%M)
 
@@ -10,10 +10,15 @@ function linkDotfile {
   [ -d "${dotFile}" ] && mv "${dotFile}"{,."${dateString}"}
 
   echo "Creating symlink: ${dotFile}"
-  ln -s "${dotfilesDir}/${1}" "${dotFile}"
+  ln -s "${dotFileDir}/${1}" "${dotFile}"
 }
 
 function installDiscord {
   wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
   sudo gdebi ~/discord.deb && rm ~/discord.deb
 }
+
+function installDeno {
+  curl -fsSL https://deno.land/x/install/install.sh | sh
+}
+

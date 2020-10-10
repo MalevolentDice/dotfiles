@@ -1,5 +1,6 @@
 #!/bin/bash
 source ./functions.sh
 
-linkDotfile .bashrc
+#linkDotFile .bashrc
+linkDotFile .vimrc
 
