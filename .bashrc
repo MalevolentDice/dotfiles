@@ -46,3 +46,5 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 # Local settings go last
 [ -f ~/.localrc ] && source ~/.localrc
 
+# Mono for godot in VS code
+export FrameworkPathOverride=/lib/mono/4.5
