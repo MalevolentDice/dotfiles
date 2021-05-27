@@ -1,0 +1,2 @@
+#!/bin/bash
+cat extensions | while read line; do code --force --install-extension $line; done
