@@ -1,0 +1,29 @@
+[user]
+  email = MalevolentDice@users.noreply.github.com
+  name = MalevolentDice
+[core]
+  editor = vim
+  pager = 
+[pager]
+  log = false
+  branch = false
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = green
+  local = magenta
+  remote = red
+
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  old = red
+  new = green
+  plain = white
+
+[color "status"]
+  added = yellow
+  changed = red
+  untracked = cyan
