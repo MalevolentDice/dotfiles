@@ -7,7 +7,8 @@ vscjava.vscode-java-pack
 james-yu.latex-workshop
 ritwickdey.liveserver
 rust-lang.rust
-octref.vetur
 yzhang.markdown-all-in-one
 esbenp.prettier-vscode
 naco-siren.gradle-language
+johnsoncodehk.volar
+ms-azuretools.vscode-docker
