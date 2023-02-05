@@ -12,6 +12,7 @@ sudo apt-get install -y snapd
 sudo apt-get install -y default-jdk
 sudo apt-get install -y gdebi
 sudo apt-get install -y steam
+sudo apt-get install -y piper
 installDiscord
 installDeno
 
