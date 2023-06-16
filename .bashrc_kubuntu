@@ -129,3 +129,19 @@ setxkbmap -option caps:none
 DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 stty -ixon
+
+# Change up a variable number of directories
+# E.g:
+#   cu   -> cd ../
+#   cu 2 -> cd ../../
+#   cu 3 -> cd ../../../
+function cu {
+  local count=$1
+  [ -z "${count}" ] && count=1
+  
+  local path=""
+  for i in $(seq 1 "${count}"); do
+    path="${path}../"
+  done
+  cd $path && pwd && ls
+}
