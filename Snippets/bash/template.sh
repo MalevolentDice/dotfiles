@@ -11,8 +11,9 @@
 ##     ${scriptName} -o DEFAULT arg1 arg2
 ##
 set -Eeuo pipefail
-readonly scriptName="$(basename ${0})"
-usage() { cat ${scriptName} | grep -e "^##" | sed -e "s/^##//g" -e "s/\${scriptName}/${scriptName}/g" >&2; }
+scriptName="$(basename "${0}")"
+readonly scriptName
+usage() { grep -e "^##" "${scriptName}" | sed -e "s/^##//g" -e "s/\${scriptName}/${scriptName}/g" >&2; }
 die() {
     local -r msg="${1}"
     local -r code="${2:-90}"
