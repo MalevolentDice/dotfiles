@@ -2,7 +2,6 @@ ms-dotnettools.csharp
 neikeq.godot-csharp-vscode
 geequlim.godot-tools
 ms-vscode.mono-debug
-bungcip.better-toml
 vscjava.vscode-java-pack
 james-yu.latex-workshop
 ritwickdey.liveserver
@@ -13,3 +12,4 @@ ms-azuretools.vscode-docker
 rust-lang.rust-analyzer
 vue.volar
 mathiasfrohlich.kotlin
+tamasfe.even-better-toml
