@@ -1,4 +1,5 @@
 ms-dotnettools.csharp
+ms-dotnettools.vscode-dotnet-runtime
 neikeq.godot-csharp-vscode
 geequlim.godot-tools
 ms-vscode.mono-debug
@@ -8,8 +9,10 @@ ritwickdey.liveserver
 yzhang.markdown-all-in-one
 esbenp.prettier-vscode
 naco-siren.gradle-language
+vscjava.vscode-gradle
 ms-azuretools.vscode-docker
 rust-lang.rust-analyzer
 vue.volar
 mathiasfrohlich.kotlin
 tamasfe.even-better-toml
+svelte.svelte-vscode
