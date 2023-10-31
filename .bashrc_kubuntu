@@ -143,3 +143,13 @@ function cu {
   done
   cd $path && pwd && ls
 }
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# lf
+lfcd () {
+    cd "$(command lf -print-last-dir "$@")"
+}
+alias lf="lfcd"
