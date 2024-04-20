@@ -2,6 +2,7 @@
   - [Dependencies](#dependencies)
     - [Driver](#driver)
     - [Wine](#wine)
+    - [Steam - Optimizing Linux for Gaming](#steam---optimizing-linux-for-gaming)
 
 
 # Lutris
@@ -15,3 +16,6 @@ https://github.com/lutris/docs/blob/master/InstallingDrivers.md
 https://github.com/lutris/docs/blob/master/WineDependencies.md
 
 > sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install -y wine64 wine32 libasound2-plugins:i386 libsdl2-2.0-0:i386 libdbus-1-3:i386 libsqlite3-0:i386
+
+### Steam - Optimizing Linux for Gaming
+https://steamcommunity.com/sharedfiles/filedetails/?id=1787799592
