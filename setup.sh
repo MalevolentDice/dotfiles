@@ -18,13 +18,13 @@ linkDotFile .vimrc
 linkDotFile .gitconfig
 
 sudo apt update
-sudo apt-get install -y xclip
-sudo apt-get install -y firefox
-sudo apt-get install -y default-jdk
-sudo apt-get install -y maven
-sudo apt-get install -y gradle
-sudo apt-get install -y tmux
-sudo apt-get install -y dotnet-sdk-8.0
+sudo apt install -y xclip
+sudo apt install -y firefox
+sudo apt install -y default-jdk
+sudo apt install -y maven
+sudo apt install -y gradle
+sudo apt install -y tmux
+sudo apt install -y dotnet-sdk-8.0
 dotnet tool install --global Chickensoft.GodotEnv
 godotenv godot install 4.3.0
 curl https://get.volta.sh | bash
@@ -38,10 +38,10 @@ wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format
 sudo dpkg -i ~/discord.deb && rm ~/discord.deb
 
 # Games
-sudo apt-get install -y piper
-sudo apt-get install -y steam
+sudo apt install -y piper
+sudo apt install -y steam
 sudo dpkg --add-architecture i386
-sudo add-apt-repository ppa:oibaf/graphics-drivers && sudo apt-get update && sudo apt-get upgrade
+sudo add-apt-repository ppa:oibaf/graphics-drivers && sudo apt update && sudo apt upgrade
 echo "deb [signed-by=/etc/apt/keyrings/lutris.gpg] https://download.opensuse.org/repositories/home:/strycore/Debian_12/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list > /dev/null
 wget -q -O- https://download.opensuse.org/repositories/home:/strycore/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/keyrings/lutris.gpg > /dev/null
 sudo apt update
