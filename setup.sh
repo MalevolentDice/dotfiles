@@ -17,7 +17,17 @@ function linkDotFile {
 linkDotFile .vimrc
 linkDotFile .gitconfig
 
-function installDiscord {
-  wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-  sudo dpkg -i ~/discord.deb && rm ~/discord.deb
-}
+#!/bin/bash
+sudo apt update
+sudo apt-get install -y kubuntu-restricted-extras
+sudo apt-get install -y xclip
+sudo apt-get install -y firefox
+sudo apt-get install -y default-jdk
+sudo apt-get install -y maven
+sudo apt-get install -y gradle
+sudo apt-get install -y steam
+sudo apt-get install -y piper
+
+# Discord
+wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+sudo dpkg -i ~/discord.deb && rm ~/discord.deb
