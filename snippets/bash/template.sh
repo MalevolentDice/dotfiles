@@ -21,6 +21,8 @@ die() {
     exit "${code}"
 }
 # ${1?"Missing parameter"}
+# assign FOO=bar iff FOO is unset or empty
+#: "${FOO:=bar}"
 
 while :; do
   case "${1-}" in
