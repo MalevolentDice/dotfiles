@@ -15,4 +15,5 @@ set softtabstop =2
 set shiftwidth  =2
 set expandtab
 
-" nnoremap ,html :-1read $HOME/.vim/template.html<CR>3jwf>a
+set clipboard+=unnamedplus
+
